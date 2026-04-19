@@ -651,6 +651,7 @@ function showCards() {
 function editCardContent(card, race) {
   // make the card visible
   card.style.display = "block";
+  card.className = "card type-" + race.type.toLowerCase();
 
   // set the race name as the card title
   const cardHeader = card.querySelector("h2");
