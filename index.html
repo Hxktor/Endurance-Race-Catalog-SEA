@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
   <head>
-    <title>Endurace Race Catalog | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
+    <title>Endurance Race Catalog | Home</title>
+    <meta name="description" content="A catalog of the world's greatest endurance races — Ironman, Marathons, Cycling and Ultras." />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="scripts.js"></script>
   </head>
@@ -10,39 +10,41 @@
   <body>
     <header class="main-header">
       <h1 class="title">Endurance Race Catalog</h1>
+      <p class="subtitle">The world's greatest races — all in one place</p>
     </header>
-    <div id="search-container">
-  <input type="text" id="search-bar" placeholder="Search races..." onkeyup="searchRaces()"/>
-</div>
-<div id="sort-container">
-  <select onchange="sortRaces(this.value)">
-    <option value="default">Sort by Difficulty</option>
-    <option value="easiest">Easiest First</option>
-    <option value="hardest">Hardest First</option>
-  </select>
-</div>
-  <div id="filter-container">
-  <button onclick="filterRaces('All')">All</button>
-  <button onclick="filterRaces('Triathlon')">Triathlon</button>
-  <button onclick="filterRaces('Marathon')">Marathon</button>
-  <button onclick="filterRaces('Cycling')">Cycling</button>
-  <button onclick="filterRaces('Ultra')">Ultra</button>
-</div>
+    <div id="race-count">16 Endurance Races — Triathlon · Marathon · Cycling · Ultra</div>
+
+    <div id="controls-container">
+      <input type="text" id="search-bar" placeholder="Search races..." onkeyup="searchRaces()"/>
+
+      <div id="filter-container">
+        <button onclick="filterRaces('All')">All</button>
+        <button onclick="filterRaces('Triathlon')">Triathlon</button>
+        <button onclick="filterRaces('Marathon')">Marathon</button>
+        <button onclick="filterRaces('Cycling')">Cycling</button>
+        <button onclick="filterRaces('Ultra')">Ultra</button>
+      </div>
+
+      <select id="sort-dropdown" onchange="sortRaces(this.value)">
+        <option value="default">Sort by Difficulty</option>
+        <option value="easiest">Easiest First</option>
+        <option value="hardest">Hardest First</option>
+      </select>
+    </div>
+
     <div id="card-container"></div>
+
     <div class="card" style="display: none">
       <div class="card-content">
-        <h2>TV Show Title</h2>
-        <img src="" alt="TV Show Poster" />
+        <h2>Race Title</h2>
+        <img src="" alt="Race Image" />
         <ul>
-          <li>Bullet Point 1</li>
-          <li>Bullet Point 2</li>
-          <li>Bullet Point 3</li>
+          <li>Detail 1</li>
+          <li>Detail 2</li>
+          <li>Detail 3</li>
         </ul>
       </div>
     </div>
-    <div class="footer">
-      <button onclick="quoteAlert()">Get A Quote!</button>
-      <button onclick="removeLastCard()">Remove A Card!</button>
-    </div>
+
   </body>
 </html>
