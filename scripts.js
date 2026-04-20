@@ -124,12 +124,17 @@ let races = [
     difficulty: 5,
     bestSeason: "September",
 
-    // Context — Nice alternates with Kona for the full Ironman World Championship
-    // Women race in Nice, men race in Kona — alternating each year until 2026
-    // From 2026 both men and women return to Kona together
-    note: "Alternates with Kona — women raced Nice in 2023 and 2024, men in 2025",
+    // Men race Nice in odd years, women race Nice in even years
+    mensCourseRecord: "7:51:36",
+    mensRecordHolder: "Casper Stornes",
+    mensRecordYear: 2025,
+    mens2025Winner: "Casper Stornes",
+    mens2025WinnerTime: "7:51:36",
+    mens2025WinnerCountry: "Norway",
+    mens2023Winner: "Sam Laidlow",
+    mens2023WinnerTime: "8:06:22",
+    mens2023WinnerCountry: "France",
 
-    // 2024 Ironman World Championship Nice winners — women's race
     womensCourseRecord: "8:45:15",
     womensRecordHolder: "Laura Philipp",
     womensRecordYear: 2024,
@@ -137,14 +142,13 @@ let races = [
     womens2024WinnerTime: "8:45:15",
     womens2024WinnerCountry: "Germany",
 
-    // Individual 2024 split leaders
     womensBikeRecord: "5:02:25",
     womensBikeRecordHolder: "Laura Philipp",
     womensRunRecord: "2:44:59",
     womensRunRecordHolder: "Laura Philipp",
 
     // Short description
-    description: "The French Riviera edition of the Ironman World Championship. The hilly 180km bike course through the Alps above Nice makes this one of the most technically demanding full distance courses in the world."
+    description: "The European edition of the Ironman World Championship on the iconic French Riviera. Men race Nice in odd years, women in even years. The hilly Alps bike course makes this one of the toughest full distance courses in the world."
   },
   {
     // Basic race info
@@ -159,7 +163,7 @@ let races = [
     run: 13.1,
     totalDistance: 70.3,
 
-    // Difficulty rated 1-5 — harbor swim, hilly Camp Pendleton bike, flat run
+    // Difficulty rated 1-5
     difficulty: 3,
     bestSeason: "April",
 
@@ -193,12 +197,11 @@ let races = [
     run: 26.2,
     totalDistance: 26.2,
 
-    // Difficulty rated 1-5 — Heartbreak Hill and no pacers make this a 4
+    // Difficulty rated 1-5
     difficulty: 4,
     bestSeason: "April",
 
-    // Course records — Boston is point-to-point so times are not world record eligible
-    // but these are the fastest times ever run on the Boston course
+    // Course records
     mensCourseRecord: "2:03:02",
     mensRecordHolder: "Geoffrey Mutai",
     womensCourseRecord: "2:17:22",
@@ -228,7 +231,7 @@ let races = [
     run: 26.2,
     totalDistance: 26.2,
 
-    // Difficulty rated 1-5 — rolling hills through 5 boroughs, no pacers, massive field
+    // Difficulty rated 1-5
     difficulty: 4,
     bestSeason: "November",
 
@@ -262,12 +265,11 @@ let races = [
     run: 26.2,
     totalDistance: 26.2,
 
-    // Difficulty rated 1-5 — flat course, fast times, but 26.2 miles is always hard
+    // Difficulty rated 1-5
     difficulty: 3,
     bestSeason: "October",
 
-    // Course records — Chicago is one of the fastest marathon courses in the world
-    // and has hosted six world records
+    // Course records — Chicago has hosted six world records
     mensCourseRecord: "2:00:35",
     mensRecordHolder: "Kelvin Kiptum",
     womensCourseRecord: "2:09:56",
@@ -297,7 +299,7 @@ let races = [
     run: 26.2,
     totalDistance: 26.2,
 
-    // Difficulty rated 1-5 — fast flat course but massive field and unpredictable weather
+    // Difficulty rated 1-5
     difficulty: 3,
     bestSeason: "April",
 
@@ -331,12 +333,11 @@ let races = [
     run: 26.2,
     totalDistance: 26.2,
 
-    // Difficulty rated 1-5 — flattest major marathon in the world, perfect for fast times
+    // Difficulty rated 1-5 — flattest major marathon in the world
     difficulty: 2,
     bestSeason: "September",
 
     // Course records — Berlin is the fastest marathon course on earth
-    // the men's world record has been broken here 13 times
     mensCourseRecord: "2:01:09",
     mensRecordHolder: "Eliud Kipchoge",
     womensCourseRecord: "2:11:53",
@@ -366,7 +367,7 @@ let races = [
     run: 26.2,
     totalDistance: 26.2,
 
-    // Difficulty rated 1-5 — slight net downhill, cool March weather, fast course
+    // Difficulty rated 1-5
     difficulty: 3,
     bestSeason: "March",
 
@@ -400,11 +401,11 @@ let races = [
     run: 26.2,
     totalDistance: 26.2,
 
-    // Difficulty rated 1-5 — hilly course through LA with warm spring weather
+    // Difficulty rated 1-5
     difficulty: 4,
     bestSeason: "March",
 
-    // Course records — Stadium to Sea course
+    // Course records
     mensCourseRecord: "2:06:35",
     mensRecordHolder: "Markos Geneti",
     womensCourseRecord: "2:24:11",
@@ -428,33 +429,31 @@ let races = [
     country: "France",
     type: "Cycling",
 
-    // Tour de France distances — total across all 21 stages in kilometers
+    // Tour de France distances in kilometers
     swim: 0,
-    bike: 3492,              // total km across all 21 stages
+    bike: 3492,
     run: 0,
-    totalDistance: 3492,     // total km across all 21 stages
-    distanceUnit: "km",      // specifies this race uses km not miles
+    totalDistance: 3492,
+    distanceUnit: "km",
 
     // Tour specific fields
     stages: 21,
-    totalElevationGainM: 52320,     // total meters of climbing across all 21 stages
-    totalElevationGainFt: 171654,   // converted to feet
+    totalElevationGainM: 52320,
+    totalElevationGainFt: 171654,
     duration: "23 days",
-    averageStageKm: 166,            // average km per stage
+    averageStageKm: 166,
 
-    // Difficulty rated 1-5 — the hardest sporting event in the world
+    // Difficulty rated 1-5
     difficulty: 5,
     bestSeason: "July",
 
-    // 2024 Tour de France winner — GC total time across all 21 stages
+    // 2024 Tour de France winner
     mens2024Winner: "Tadej Pogačar",
     mens2024WinnerTime: "83:38:56",
     mens2024WinnerCountry: "Slovenia",
     mens2024WinnerMargin: "6:17",
 
     // All time Tour de France records
-    // Lance Armstrong won 7 consecutive titles (1999-2005) but was stripped of all
-    // of them in 2012 by USADA for systematic doping violations
     mostWinsOfficial: "5 wins",
     mostWinsOfficialHolders: "Eddie Merckx, Bernard Hinault, Miguel Indurain, Jacques Anquetil",
     mostWinsStripped: "7 wins (stripped)",
@@ -479,14 +478,14 @@ let races = [
     totalDistance: 100,
 
     // Ultra specific fields
-    elevationGainFt: 15744,       // total feet of elevation gain
-    elevationGainM: 4799,         // total meters of elevation gain
-    startElevationFt: 10200,      // starting elevation in feet
-    highPointFt: 12532,           // highest point — Hope Pass
-    cutoffTime: "30 hours",       // race cutoff time
-    finishRate: "less than 50%",  // fewer than half of starters finish
+    elevationGainFt: 15744,
+    elevationGainM: 4799,
+    startElevationFt: 10200,
+    highPointFt: 12532,
+    cutoffTime: "30 hours",
+    finishRate: "less than 50%",
 
-    // Difficulty rated 1-5 — high altitude 100 miler through the Rockies
+    // Difficulty rated 1-5
     difficulty: 5,
     bestSeason: "August",
 
@@ -498,7 +497,7 @@ let races = [
     womensRecordHolder: "Ann Trason",
     womensRecordYear: 1994,
 
-    // 2024 Leadville Trail 100 Run winners — most recent verified results
+    // 2024 Leadville Trail 100 Run winners
     mens2024Winner: "David Roche",
     mens2024WinnerTime: "15:26:34",
     womens2024Winner: "Mary Denholm",
@@ -521,14 +520,14 @@ let races = [
     totalDistance: 239.66,
 
     // Ultra specific fields
-    elevationGainFt: 31564,       // total feet of elevation gain
-    elevationGainM: 9621,         // total meters of elevation gain
-    startElevationFt: 3945,       // starting elevation in feet
-    highPointFt: 10583,           // highest point on course
-    cutoffTime: "117 hours",      // race cutoff time
-    finishRate: "50-60%",         // approximate finish rate
+    elevationGainFt: 31564,
+    elevationGainM: 9621,
+    startElevationFt: 3945,
+    highPointFt: 10583,
+    cutoffTime: "117 hours",
+    finishRate: "50-60%",
 
-    // Difficulty rated 1-5 — 240 miles through Utah desert and two mountain ranges
+    // Difficulty rated 1-5
     difficulty: 5,
     bestSeason: "October",
 
@@ -540,7 +539,7 @@ let races = [
     womensRecordHolder: "Courtney Dauwalter",
     womensRecordYear: 2017,
 
-    // 2025 Moab 240 winners — most recent results
+    // 2025 Moab 240 winners
     mens2025Winner: "Kilian Korth",
     mens2025WinnerTime: "58:45:47",
     womens2025Winner: "Rebecca Rick",
@@ -562,12 +561,12 @@ let races = [
     totalDistance: 256,
 
     // Ultra specific fields
-    elevationGainFt: 40000,       // total feet of elevation gain
-    elevationGainM: 12200,        // total meters of elevation gain
-    startElevationFt: 1996,       // starting elevation in feet
-    highPointFt: 9241,            // highest point on course
-    cutoffTime: "125 hours",      // race cutoff time
-    firstHeld: 2021,              // inaugural year
+    elevationGainFt: 40000,
+    elevationGainM: 12200,
+    startElevationFt: 1996,
+    highPointFt: 9241,
+    cutoffTime: "125 hours",
+    firstHeld: 2021,
 
     // Difficulty rated 1-5
     difficulty: 5,
@@ -604,17 +603,17 @@ let races = [
     totalDistance: 304,
 
     // Ultra specific fields
-    elevationGainFt: 41000,       // total feet of elevation gain
-    elevationGainM: 12497,        // total meters of elevation gain
-    cutoffTime: "170 hours",      // 7 day race cutoff
-    firstHeld: 2025,              // inaugural year — brand new race
-    aidStations: 19,              // number of aid stations
+    elevationGainFt: 41000,
+    elevationGainM: 12497,
+    cutoffTime: "170 hours",
+    firstHeld: 2025,
+    aidStations: 19,
 
-    // Difficulty rated 1-5 — 304 miles through the Sonoran desert
+    // Difficulty rated 1-5
     difficulty: 5,
     bestSeason: "April",
 
-    // Course records — inaugural 2025 race, these ARE the course records
+    // Course records — inaugural 2025 race
     mensCourseRecord: "82:49:45",
     mensRecordHolder: "Michael McKnight",
     mensRecordYear: 2025,
@@ -622,7 +621,7 @@ let races = [
     womensRecordHolder: "Selene Mallone",
     womensRecordYear: 2025,
 
-    // 2025 Arizona Monster 300 winners — inaugural race
+    // 2025 Arizona Monster 300 winners
     mens2025Winner: "Michael McKnight",
     mens2025WinnerTime: "82:49:45",
     womens2025Winner: "Selene Mallone",
@@ -631,7 +630,46 @@ let races = [
     // Short description
     description: "304 miles through Arizona's Sonoran desert. The newest and longest race on this list — 2025 was the inaugural year. Every runner at the start takes an oath: 'If I get lost, hurt or die, it's my own damn fault.'"
   },
-]; 
+];
+
+// updates the race count bar dynamically based on how many cards are showing
+function updateRaceCount(count, label) {
+  const raceCountBar = document.getElementById("race-count");
+  if (count === races.length) {
+    raceCountBar.textContent = races.length + " Endurance Races — Triathlon · Marathon · Cycling · Ultra";
+  } else {
+  raceCountBar.textContent = count + " " + label;  }
+}
+
+// this function builds a visual difficulty bar based on the difficulty rating
+// 1-3 = orange (manageable), 4-5 = red (brutal)
+function getDifficultyBars(level) {
+  let bars = "";
+  let color = level <= 3 ? "#e85d04" : "#cc0000";
+
+  for (let i = 1; i <= 5; i++) {
+    if (i <= level) {
+      bars += `<span style="
+        display: inline-block;
+        width: 18px;
+        height: 8px;
+        background-color: ${color};
+        border-radius: 2px;
+        margin-right: 3px;
+      "></span>`;
+    } else {
+      bars += `<span style="
+        display: inline-block;
+        width: 18px;
+        height: 8px;
+        background-color: #e0e0e0;
+        border-radius: 2px;
+        margin-right: 3px;
+      "></span>`;
+    }
+  }
+  return bars;
+}
 
 // this function adds cards to the page to display the data in the array
 function showCards() {
@@ -641,16 +679,21 @@ function showCards() {
 
   // loop through every race in our races array
   for (let i = 0; i < races.length; i++) {
-    let race = races[i]; // store current race object
-    const nextCard = templateCard.cloneNode(true); // copy the template card
-    editCardContent(nextCard, race); // fill the card with race data
-    cardContainer.appendChild(nextCard); // add card to the page
+    let race = races[i];
+    const nextCard = templateCard.cloneNode(true);
+    editCardContent(nextCard, race);
+    cardContainer.appendChild(nextCard);
   }
+
+  // update the race count bar
+  updateRaceCount(races.length, "Races");
 }
 
 function editCardContent(card, race) {
   // make the card visible
   card.style.display = "block";
+
+  // set race type class for color coding
   card.className = "card type-" + race.type.toLowerCase();
 
   // set the race name as the card title
@@ -666,20 +709,36 @@ function editCardContent(card, race) {
   cardList.innerHTML = `
     <li>📍 ${race.location}</li>
     <li>🏁 Type: ${race.type}</li>
-    <li>📏 Total Distance: ${race.totalDistance} miles</li>
-    <li>⭐ Difficulty: ${race.difficulty}/5</li>
+    <li>📏 Total Distance: ${race.totalDistance} ${race.distanceUnit ? race.distanceUnit : "miles"}</li>
+    <li>💪 Difficulty: ${getDifficultyBars(race.difficulty)}</li>
     <li>📅 Best Season: ${race.bestSeason}</li>
-    <li>🏆 Men's Record: ${race.mensCourseRecord} — ${race.mensRecordHolder}</li>
-    <li>🏆 Women's Record: ${race.womensCourseRecord} — ${race.womensRecordHolder}</li>
+    ${race.mensCourseRecord ? `<li>🏆 Men's Record: ${race.mensCourseRecord} — ${race.mensRecordHolder}</li>` : ""}
+    ${race.womensCourseRecord ? `<li>🏆 Women's Record: ${race.womensCourseRecord} — ${race.womensRecordHolder}</li>` : ""}
     <li>📝 ${race.description}</li>
   `;
+
+  // add the calendar button to each card
+  const calendarBtn = document.createElement("button");
+  calendarBtn.textContent = "+ Add to Calendar";
+  calendarBtn.className = "add-to-calendar-btn";
+  calendarBtn.onclick = function() {
+    addToCalendar(race);
+  };
+  card.querySelector(".card-content").appendChild(calendarBtn);
 
   // log to console so we can verify each card is being built
   console.log("Card created for:", race.name);
 }
 
 // this calls showCards() when the page first loads
-document.addEventListener("DOMContentLoaded", showCards);
+document.addEventListener("DOMContentLoaded", function() {
+  showCards();
+  // set All button as active on page load
+  const allButton = document.querySelector("#filter-container button");
+  if (allButton) {
+    allButton.classList.add("active");
+  }
+});
 
 function quoteAlert() {
   console.log("Button Clicked!");
@@ -687,11 +746,21 @@ function quoteAlert() {
 }
 
 function removeLastCard() {
-  races.pop(); // remove last race from the array
-  showCards(); // refresh the cards
+  races.pop();
+  showCards();
 }
 
 function filterRaces(type) {
+  // update active button state
+  const buttons = document.querySelectorAll("#filter-container button");
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("active");
+    if (buttons[i].textContent.toUpperCase() === type.toUpperCase() ||
+       (type === "All" && buttons[i].textContent === "All")) {
+      buttons[i].classList.add("active");
+    }
+  }
+
   // if All is selected show every race
   if (type === "All") {
     showCards();
@@ -714,6 +783,12 @@ function filterRaces(type) {
       cardContainer.appendChild(nextCard);
     }
   }
+
+  // update the race count bar
+  updateRaceCount(
+    document.getElementById("card-container").children.length,
+    type + " Races"
+  );
 }
 
 function searchRaces() {
@@ -740,6 +815,12 @@ function searchRaces() {
       cardContainer.appendChild(nextCard);
     }
   }
+
+  // update the race count bar
+  updateRaceCount(
+    document.getElementById("card-container").children.length,
+    "Races"
+  );
 }
 
 function sortRaces(value) {
@@ -748,13 +829,10 @@ function sortRaces(value) {
 
   // sort based on what the user selected
   if (value === "easiest") {
-    // sort difficulty low to high
     sortedRaces.sort((a, b) => a.difficulty - b.difficulty);
   } else if (value === "hardest") {
-    // sort difficulty high to low
     sortedRaces.sort((a, b) => b.difficulty - a.difficulty);
   } else {
-    // default — just show original order
     showCards();
     return;
   }
@@ -771,4 +849,95 @@ function sortRaces(value) {
     editCardContent(nextCard, race);
     cardContainer.appendChild(nextCard);
   }
+}
+
+// array to store races added to the calendar
+let myCalendar = [];
+
+function addToCalendar(race) {
+  // check if race is already in the calendar
+  for (let i = 0; i < myCalendar.length; i++) {
+    if (myCalendar[i].name === race.name) {
+      alert(race.name + " is already in your calendar!");
+      return;
+    }
+  }
+
+  // add the race to the calendar array
+  myCalendar.push(race);
+
+  // refresh the calendar display
+  renderCalendar();
+}
+
+function renderCalendar() {
+  const container = document.getElementById("calendar-container");
+  const raceCountSelected = document.getElementById("race-count-selected");
+  const totalDistanceSelected = document.getElementById("total-distance-selected");
+
+  // if no races selected show empty message
+  if (myCalendar.length === 0) {
+    container.innerHTML = '<p id="calendar-empty-message">Click "Add to Calendar" on any race card to start building your race calendar.</p>';
+    raceCountSelected.textContent = "0 races selected";
+    totalDistanceSelected.textContent = "0 miles total";
+    return;
+  }
+
+  // sort calendar by best season month order
+  const monthOrder = {
+    "January": 1, "February": 2, "March": 3,
+    "April": 4, "May": 5, "June": 6,
+    "July": 7, "August": 8, "September": 9,
+    "October": 10, "November": 11, "December": 12
+  };
+
+  let sorted = [...myCalendar].sort((a, b) => {
+    return (monthOrder[a.bestSeason] || 13) - (monthOrder[b.bestSeason] || 13);
+  });
+
+  // calculate total distance
+  let totalDistance = 0;
+  for (let i = 0; i < myCalendar.length; i++) {
+    totalDistance += myCalendar[i].totalDistance;
+  }
+
+  // update stats
+  raceCountSelected.textContent = myCalendar.length + " race" + (myCalendar.length > 1 ? "s" : "") + " selected";
+  totalDistanceSelected.textContent = totalDistance.toFixed(1) + " miles total";
+
+  // build the calendar cards
+  let html = "";
+  for (let i = 0; i < sorted.length; i++) {
+    let race = sorted[i];
+    html += `
+      <div class="calendar-card">
+        <div class="calendar-month">${race.bestSeason}</div>
+        <div class="calendar-race-name">${race.name}</div>
+        <div class="calendar-race-location">📍 ${race.location}</div>
+        <div class="calendar-race-distance">📏 ${race.totalDistance} ${race.distanceUnit ? race.distanceUnit : "miles"}</div>
+        <div class="calendar-race-type type-badge-${race.type.toLowerCase()}">${race.type}</div>
+        <button class="remove-from-calendar-btn" onclick="removeFromCalendar('${race.name}')">✕ Remove</button>
+      </div>
+    `;
+  }
+
+  container.innerHTML = html;
+}
+
+function removeFromCalendar(raceName) {
+  // filter out the race that was removed
+  myCalendar = myCalendar.filter(function(race) {
+    return race.name !== raceName;
+  });
+
+  // refresh the calendar
+  renderCalendar();
+}
+
+function clearCalendar() {
+  // empty the calendar array
+  myCalendar = [];
+
+  // refresh the calendar
+  renderCalendar();
 }
